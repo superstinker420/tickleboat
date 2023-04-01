@@ -6,103 +6,157 @@
 	<title>Build Process of an Electric Skateboard</title>
 	<style>
 		/* CSS styles here */
-body {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-	background-color: #f7f7f7;
+/* Global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-	text-align: center;
-	padding: 2rem 0;
-	font-size: 2rem;
-	color: #333;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .container {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.timeline {
-	position: relative;
-	margin: 0 auto;
+/* Header */
+
+header {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px 0;
 }
 
-.timeline-item {
-	position: relative;
-	padding: 2rem 0;
+header h1 {
+  font-size: 36px;
+  margin: 0;
 }
 
-.timeline-content {
-	position: relative;
-	max-width: 500px;
-	margin: 0 auto;
-	background-color: #fff;
-	border-radius: 10px;
-	padding: 1.5rem;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Navigation */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.timeline-item::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 30px;
-	height: 30px;
-	transform: translate(-50%, -50%);
-	background-color: #fff;
-	border: 2px solid #333;
-	border-radius: 50%;
+nav ul {
+  display: flex;
+  list-style: none;
 }
 
-.timeline-item::after {
-	content: attr(data-text);
-	position: absolute;
-	top: 40px;
-	left: 50%;
-	transform: translateX(-50%);
-	background-color: #fff;
-	padding: 0 1rem;
-	font-size: 1rem;
-	color: #333;
-	font-weight: bold;
-	border-radius: 20px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+nav ul li {
+  margin-right: 20px;
 }
 
-.timeline-item:last-child::before {
-	display: none;
+nav ul li:last-child {
+  margin-right: 0;
 }
 
-@media (max-width: 768px) {
-	.timeline-item::after {
-		font-size: 0.8rem;
-		top: 30px;
-	}
+nav a {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-	display: block;
-	margin: 1.5rem auto;
+nav a:hover {
+  background-color: #ffffff;
+  color: #333333;
 }
 
-/* responsive */
-@media (max-width: 600px) {
-	.timeline-item {
-		padding: 1rem 0;
-	}
-	.timeline-content {
-		max-width: 100%;
-	}
+/* Main content */
+
+section {
+  margin-top: 50px;
 }
+
+section h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.process {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.process-image {
+  flex-basis: 45%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.process-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.process-image:hover img {
+  transform: scale(1.2);
+}
+
+.process-text {
+  flex-basis: 45%;
+}
+
+.process h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.process p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+footer p {
+  text-align: center;
+}
+
 
 
 	</style>
